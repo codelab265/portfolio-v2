@@ -18,6 +18,7 @@ use Inertia\Inertia;
 */
 
 Route::get("/", [MainController::class, "home"]);
+Route::get("/projects", [MainController::class, "projects"]);
 
 /* Route::get('/', function () {;
     return Inertia::render('Welcome', [;
