@@ -22,18 +22,16 @@ const Hero = () => {
                     {/* text */}
                     <div className="flex max-w-[600px] flex-col justify-center mx-auto lg:mx-0 text-center lg:text-left">
                         <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-                            Web Developer
+                            Web & Mobile Developer
                         </div>
                         <h1 className="h1 mb-4">
-                            Hello, my name is Ryan Davis
+                            Hello, my name is Mphatso Mlenga
                         </h1>
                         <p className="subtitle max-w-[490px] mx-auto lg:mx-0">
-                            Brief description with insights into myself, my
-                            vocational journey, and what I engage in
-                            professionally.
+                        I design and code beautifully simple things, and I love what I do.
                         </p>
                         {/* buttons */}
-                        <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12">
+                        {/* <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto lg:mx-0 mb-12">
                             <Link href="/contact">
                                 <Button className="gap-x-2">
                                     Contact me <Send size={18} />
@@ -43,7 +41,7 @@ const Hero = () => {
                                 Download CV
                                 <Download size={18} />
                             </Button>
-                        </div>
+                        </div> */}
                         {/* socials */}
                         <Socials
                             containerStyles="flex gap-x-6 mx-auto lg:mx-0"

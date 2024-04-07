@@ -123,6 +123,7 @@ const About = () => {
     return arr.find((item) => item.title === title);
   };
 
+
   return (
     <section className='xl:h-[860px] pb-12 xl:py-24'>
       <div className='container mx-auto'>
@@ -160,12 +161,10 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3 className='h3 mb-4'>
-                      Unmatched Service Quality for Over 10 Years
+                    Hi, I’m Mphatso. Nice to meet you.
                     </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
-                      I specialize in crafting intuitive websites with
-                      cutting-edge technology, delivering dynamic and engaging
-                      user experiences.
+                    Since beginning my journey as a freelance designer 9 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops
                     </p>
                     {/* icons */}
                     <div className='grid xl:grid-cols-2 gap-4 mb-12'>

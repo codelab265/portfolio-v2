@@ -7,16 +7,16 @@ import Work from "@/Components/Work";
 import MainLayout from "@/Layouts/MainLayout";
 import { Head } from "@inertiajs/react";
 
-export default function Home() {
+export default function Home({ projects, reviews }) {
     return (
         <MainLayout>
             <Head title="Home" />
             <main>
                 <Hero />
                 <About />
-                <Services />
-                <Work />
-                <Reviews />
+                {/* <Services /> */}
+                <Work projects={projects} />
+                <Reviews reviews={reviews} />
                 <Cta />
             </main>
         </MainLayout>

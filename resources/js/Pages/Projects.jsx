@@ -88,16 +88,16 @@ const projectData = [
     },
 ];
 
-const uniqueCategories = [
-    "all projects",
-    ...new Set(projectData.map((item) => item.category)),
-];
+function Projects({ projects }) {
+    const uniqueCategories = [
+        "all projects",
+        ...new Set(projects.map((item) => item.category)),
+    ];
 
-function Projects() {
     const [categories, setCategories] = useState(uniqueCategories);
     const [category, setCategory] = useState("all projects");
 
-    const filteredProjects = projectData.filter((project) => {
+    const filteredProjects = projects.filter((project) => {
         // if category is 'all projects' return all projects, else filter by category
         return category === "all projects"
             ? project

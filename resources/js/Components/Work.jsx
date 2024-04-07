@@ -98,19 +98,19 @@ const projectData = [
     },
 ];
 
-const Work = () => {
+const Work = ({ projects }) => {
     return (
         <section className="relative mb-12 lg:mb-48">
             <div className="container mx-auto flex flex-col lg:flex-row">
                 {/* text */}
                 <div className="w-full lg:w-[30%] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center lg:items-start">
-                    <h2 className="section-title mb-4">Latest Projects</h2>
+                    <h2 className="section-title mb-4">My Recent Work</h2>
                     <p className="subtitle mb-8">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit.
+                        Here are a few past design projects I've worked on. Want
+                        to see more?
                     </p>
                     <Link href="/projects">
-                        <Button>All projects</Button>
+                        <Button>Click Me</Button>
                     </Link>
                 </div>
                 {/* slider */}
@@ -128,7 +128,7 @@ const Work = () => {
                         pagination={{ clickable: true }}
                     >
                         {/* show only the first 4 projects for the slides */}
-                        {projectData.slice(0, 4).map((project, index) => {
+                        {projects.slice(0, 4).map((project, index) => {
                             return (
                                 <SwiperSlide key={index}>
                                     <ProjectCard project={project} />
