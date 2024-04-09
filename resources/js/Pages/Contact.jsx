@@ -47,7 +47,7 @@ function Contact() {
                             {/* phone */}
                             <div className="flex items-center gap-x-8">
                                 <PhoneCall size={18} className="text-primary" />
-                                <div>+265 992 347 819</div>
+                                <div>+265 992 374 819</div>
                             </div>
                         </div>
                         <Form />
