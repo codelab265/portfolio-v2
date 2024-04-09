@@ -22,7 +22,9 @@ function Contact() {
                                 Let's Work Together.
                             </h1>
                             <p className="subtitle max-w-[400px]">
-                            Feel free to Contact me by submitting the form below and I will get back to you as soon as possible.
+                                Feel free to Contact me by submitting the form
+                                below and I will get back to you as soon as
+                                possible.
                             </p>
                         </div>
                         {/* illustration */}
@@ -35,17 +37,17 @@ function Contact() {
                             {/* mail */}
                             <div className="flex items-center gap-x-8">
                                 <MailIcon size={18} className="text-primary" />
-                                <div>youremail@gmail.com</div>
+                                <div>mphatsomlenga1@gmail.com</div>
                             </div>
                             {/* address */}
                             <div className="flex items-center gap-x-8">
                                 <HomeIcon size={18} className="text-primary" />
-                                <div>8420 Pine Avenue, Meadowville MC 842</div>
+                                <div>Lilongwe, Malawi</div>
                             </div>
                             {/* phone */}
                             <div className="flex items-center gap-x-8">
                                 <PhoneCall size={18} className="text-primary" />
-                                <div>+44 123 546 7890</div>
+                                <div>+265 992 347 819</div>
                             </div>
                         </div>
                         <Form />

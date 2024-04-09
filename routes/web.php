@@ -20,6 +20,7 @@ use Inertia\Inertia;
 Route::get("/", [MainController::class, "home"]);
 Route::get("/projects", [MainController::class, "projects"]);
 Route::get("/contact", [MainController::class, "contact"]);
+Route::post("/contact", [MainController::class, "sendEmail"]);
 
 /* Route::get('/', function () {;
     return Inertia::render('Welcome', [;
@@ -40,4 +41,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
