@@ -5,7 +5,7 @@ import Template from "@/Components/template";
 
 export default function MainLayout({ children }) {
     return (
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />
             <Template>{children}</Template>
             <Footer />
