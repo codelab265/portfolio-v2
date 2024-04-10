@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
+use App\Livewire\Review;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -21,6 +22,7 @@ Route::get("/", [MainController::class, "home"]);
 Route::get("/projects", [MainController::class, "projects"]);
 Route::get("/contact", [MainController::class, "contact"]);
 Route::post("/contact", [MainController::class, "sendEmail"]);
+Route::get("/review/create", Review::class);
 
 /* Route::get('/', function () {;
     return Inertia::render('Welcome', [;
