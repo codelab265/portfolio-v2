@@ -1,5 +1,5 @@
-<div>
-    <div class="w-1/2 mx-auto my-12 p-8 bg-white rounded-lg border-2">
+<div class="px-4">
+    <div class="w-full md:w-1/2 mx-auto my-12 p-8 bg-white rounded-lg border-2">
         <form wire:submit="create">
             {{ $this->form }}
             
